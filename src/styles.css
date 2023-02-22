@@ -1,0 +1,46 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.inline-grid-container {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item,
+.inline-grid-item {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+.products {
+  margin: 20px;
+  display: grid;
+  padding: 0;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product__single {
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+  background-color: #777;
+  cursor: pointer;
+}
+
+.product__single > img {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 3px;
+}
